@@ -1,0 +1,34 @@
+<!--DEV
+
+Нужно убрать пробел между @-ами:
+
+@ @include('blocks/page-header/page-header.html')
+
+-->
+<header class="page-header">
+  @@include('../../blocks/logo/logo.html')
+  @@include('../../blocks/page-nav/page-nav.html')
+  <button class="page-header__search" type="button">
+    <svg class="page-header__img">
+      <use xlink:href="#search" data-img="img/search.png"></use>
+    </svg>
+    <noscript><img class="page-header__img" src="img/search.png" width="32"
+                   height="32" alt="search"/></noscript>
+  </button>
+  <button class="page-header__entrance" type="button">
+    <svg class="page-header__img">
+      <use xlink:href="#entrance" data-img="img/entrance.png"></use>
+    </svg>
+    <noscript><img class="page-header__img" src="img/entrance.png" width="32"
+                   height="32" alt="entrance"/></noscript>
+    Вход
+  </button>
+  <button class="page-header__cart" type="button">
+    <svg class="page-header__img">
+      <use xlink:href="#cart" data-img="img/cart.png"></use>
+    </svg>
+    <noscript><img class="page-header__img" src="img/cart.png" width="32"
+                   height="32" alt="cart"/></noscript>
+    Пусто
+  </button>
+</header>

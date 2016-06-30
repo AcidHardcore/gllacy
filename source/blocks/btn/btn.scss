@@ -1,0 +1,155 @@
+@import "../../sass/mixins/mixins";
+
+.btn {
+  @include btn();
+  @include btn-color(#fff, $color-red, transparent);
+  //@include btn-size();
+
+  &--main {
+    @include btn-color(#fff, $color-main, $color-main);
+  }
+
+  &--danger {
+    @include btn-color(#fff, $color-danger, $color-danger);
+  }
+
+  &--success {
+    @include btn-color(#fff, $color-success, $color-success);
+  }
+
+  &--lg {
+    @include btn-size(lg);
+  }
+
+  &--sm {
+    @include btn-size(sm);
+  }
+  &--slider {
+    width: 100%;
+    @media (min-width: $screen-md) {
+      width: auto;
+      padding-right: 7.1rem;
+      padding-left: 7.1rem;
+    }
+  }
+  &--web-cite {
+    width: 100%;
+    padding: .9rem 4rem;
+    @media (min-width: $screen-md) {
+      width: auto;
+    }
+  }
+  &--app {
+    width: 100%;
+    padding: .9rem 4rem;
+
+    background-color: #00ca74;
+    @media (min-width: $screen-md) {
+      width: auto;
+    }
+  }
+  &--presentation {
+    width: 100%;
+    padding: .9rem 4rem;
+
+    background-color: #efc84a;
+    @media (min-width: $screen-md) {
+      width: auto;
+    }
+  }
+  &--map {
+    width: 100%;
+  }
+  &--shop-submit {
+    width: 100%;
+    margin-bottom: $line-height*2;
+    padding-right: 55px;
+    padding-left: 55px;
+
+    color: $black;
+    background-color: #f1f1f1;
+    @media (min-width: $screen-md) {
+      width: auto;
+      margin-top: 60px;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  &--paginator-number {
+    padding-right: 15px;
+    padding-left: 15px;
+
+    color: $black;
+    background-color: #f1f1f1;
+  }
+  &--paginator-next {
+    padding-right: 30px;
+    padding-left: 30px;
+
+    color: $black;
+    background-color: #f1f1f1;
+  }
+  &:hover {
+    background-color: #d6494d;
+  }
+  &:active
+  ,
+  &:focus {
+    background-color: #b63538;
+  }
+  &--app:hover {
+    background-color: #01a25e;
+  }
+  &--app:active
+  ,
+  &--app:focus {
+    background-color: #009053;
+  }
+  &--presentation:hover {
+    background-color: #d6ae2c;
+  }
+  &--presentation:active
+  ,
+  &--presentation:focus {
+    background-color: #c09b24;
+  }
+  &--shop-submit:hover
+  ,
+  &--paginator-number:hover
+  ,
+  &--paginator-next:hover {
+    color: $black;
+    background-color: #e5e5e5;
+  }
+  &--shop-submit:active
+  ,
+  &--shop-submit:focus
+  ,
+  &--paginator-number:active
+  ,
+  &--paginator-next:active {
+    color: $black;
+    border-top: 1px solid #b5b5b5;
+    background-color: #d5d5d5;
+  }
+  &--paginator-number:focus {
+    color: $black;
+    border: 1px solid #d5d5d5;
+    background-color: #fff;
+  }
+  &--paginator-next:focus {
+    color: $black;
+    background: #d5d5d5;
+  }
+  &--block {
+    width: 100%;
+
+    text-align: center;
+
+    justify-content: center;
+
+    & + & {
+      margin-top: ($line-height / 2);
+    }
+  }
+}

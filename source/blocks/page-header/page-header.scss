@@ -1,0 +1,24 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/page-header/page-header.less';
+@import "../../sass/variables";
+// только для удобства обращения к переменным
+@import "../../sass/mixins/mixins";
+
+.page-header {
+  display: flex;
+
+  align-items: center;
+
+  &__img {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__search {
+    margin-right: 10px;
+    margin-left: auto;
+  }
+
+  &__entrance {
+    margin-right: 10px;
+  }
+}
