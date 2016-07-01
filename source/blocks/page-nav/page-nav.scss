@@ -7,6 +7,7 @@
   &__list {
     display: flex;
     flex-direction: column;
+
     margin: 0;
     padding: 0;
 
@@ -25,48 +26,63 @@
 
   &__item {
     cursor: pointer;
-
   }
 
   &__link {
     display: block;
-    padding: 1rem 15px;
+
     min-height: $line-height + pxToRem(15px);
+    padding: 1rem 15px;
+
     font-weight: 700;
-    text-decoration: underline;
+  }
+
+  &__link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c5d6cd;
   }
 
   &__link:hover {
-    text-decoration: none;
-
     color: $black;
-    font-weight: 700;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     background-color: $white;
+
+    font-weight: 700;
+  }
+
+  &__link:hover::after,
+  &__link:focus::after,
+  &__link:active::after {
+    display: none;
   }
 
   &__link:focus {
     text-decoration: none;
 
     color: $white;
-    font-weight: 700;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     background-color: #d07058;
+
+    font-weight: 700;
   }
 
   &__link:active {
     text-decoration: none;
 
     color: $black;
-    font-weight: 700;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     background-color: $white;
+
+    font-weight: 700;
   }
 
   &__list-lvl2 {
@@ -80,9 +96,10 @@
     margin: 0;
     padding: 0;
 
+    list-style: none;
+
     transition: opacity .5s ease;
 
-    list-style: none;
     opacity: 0;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -95,8 +112,7 @@
     position: relative;
   }
 
-  &__link--dropdown-trigger:focus +
-  &__list-lvl2 {
+  &__link--dropdown-trigger:focus + &__list-lvl2 {
     display: flex;
     flex-direction: column;
 
@@ -109,8 +125,7 @@
     position: relative;
   }
 
-  &__item--dropdown:hover >
-  &__list-lvl2 {
+  &__item--dropdown:hover > &__list-lvl2 {
     display: flex;
     flex-direction: column;
 
@@ -119,34 +134,49 @@
     flex-wrap: nowrap;
   }
 
-  &__item-lvl2 {
+  &__link-lvl2 {
     padding: .5rem 20px;
-
+    display: block;
     cursor: pointer;
+    color: $black;
+    font-size: 1.4rem;
   }
 
   &__item-lvl2:first-child {
-    font-weight: 700;
     min-height: 32px;
+
+    font-weight: 700;
     //position: relative;
   }
 
   &__item-lvl2:first-child::after {
-    display: block;
     position: absolute;
-    content: '';
-    width: 88%;
-    left: 0;
-    right: 0;
     top: $line-height+1;
-    margin: auto;
+    right: 0;
+    left: 0;
+
+    display: block;
+
+    width: 88%;
     height: 1px;
+    margin: auto;
+
+    content: "";
+
     background-color: $black;
   }
 
-  &__link-lvl2 {
-    color: $black;
-    font-size: 1.4rem;
+  &__link-lvl2:hover {
+    background-color: $color-hover;
+  }
+
+  &__link-lvl2:focus {
+    background-color: $color-focus;
+    color: $white;
+  }
+
+  &__link-lvl2:active {
+    background-color: $color-active;
   }
 
   &__collapse {

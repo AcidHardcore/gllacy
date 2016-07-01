@@ -14,9 +14,9 @@ $color-main: #849d8f;
 $color-success: #5cb85c;
 $color-danger: #d9534f;
 $color-red: #ea5239 ;
-$color-green: #00ca74;
-$color-yellow: #efc84a;
-
+$color-hover: #fbded7;
+$color-active: #f6b5a5;
+$color-focus: #d07058;
 
 
 // Семантические цвета
@@ -28,7 +28,7 @@ $body-bg: #fff;
 
 //$link-color:                  $color-main;
 $link-color: $white;
-$link-color--hover: darken($color-main, 15%);
+//$link-color--hover: darken($color-main, 15%);
 $border-color: $gray-light;
 $font-size: 1.6rem;
 $font-size--h1: 3.6rem;
