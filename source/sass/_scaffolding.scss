@@ -333,11 +333,37 @@ blockquote {
 
 a {
   text-decoration: none;
-
+  font-weight: 500;
   color: $link-color;
 
-  &:hover
-  ,
+  &::after {
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    content: "";
+
+    background-color: #333333;
+  }
+
+  &:hover,
+  &:active {
+    color: #ec593c;
+  }
+
+  &:hover::after,
+  &:active::after {
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    content: "";
+
+    background-color: $color-hover;
+  }
+
   &:focus {
     outline: 0;
   }

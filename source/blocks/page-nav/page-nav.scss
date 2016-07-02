@@ -151,6 +151,10 @@
     font-size: 1.4rem;
   }
 
+  &__link-lvl2::after {
+    display: none;
+  }
+
   &__item-lvl2:first-child {
     min-height: 32px;
 
@@ -177,6 +181,7 @@
 
   &__link-lvl2:hover {
     background-color: $color-hover;
+    color: $black;
   }
 
   &__link-lvl2:focus {
@@ -186,6 +191,12 @@
 
   &__link-lvl2:active {
     background-color: $color-active;
+    color: $black;
+  }
+
+  &__link-lvl2:active::after,
+  &__link-lvl2:focus::after {
+    display: none;
   }
 
   &__collapse {
