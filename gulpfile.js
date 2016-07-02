@@ -25,10 +25,27 @@ var gulp = require('gulp'),
     cheerio = require('gulp-cheerio'),
     svgfallback = require('gulp-svgfallback'),
     uglify = require('gulp-uglify'),
-    svg2png = require('gulp-svg2png');
+    svg2png = require('gulp-svg2png'),
+    reporter = require('postcss-reporter'),
+    stylelint = require('stylelint'),
+    scss = require("postcss-scss");
 
 // Запуск `NODE_ENV=production npm start [задача]` приведет к сборке без sourcemaps
 const isDev = !process.env.NODE_ENV || process.env.NODE_ENV == 'dev';
+
+//stylelint
+gulp.task('lint:css', function() {
+    return gulp.src('/source/**/*.scss')
+        .pipe(postcss(
+            [
+                stylelint({ /* options */ }),
+                reporter({ clearMessages: true })
+            ],
+            {
+                syntax: scss
+            }
+        ));
+});
 
 //SASS comb
 gulp.task('comb', function () {

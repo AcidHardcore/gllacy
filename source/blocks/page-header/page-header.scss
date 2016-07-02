@@ -9,16 +9,33 @@
   align-items: center;
 
   &__img {
-    width: 32px;
-    height: 32px;
+    position: absolute;
+
+    width: 17px;
+    height: 17px;
   }
 
   &__search {
+    position: relative;
+
+    width: 32px;
+    height: 32px;
     margin-right: 10px;
     margin-left: auto;
+
+    -webkit-border-radius: $border-radius;
+       -moz-border-radius: $border-radius;
+            border-radius: $border-radius;
   }
 
   &__entrance {
+    width: 92px;
+    height: 32px;
     margin-right: 10px;
+  }
+
+  &__cart {
+    width: 117px;
+    height: 32px;
   }
 }
