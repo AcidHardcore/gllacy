@@ -1,0 +1,57 @@
+<div class="cart__wrapper">
+  <button class="btn btn--cart" type="submit">
+    <svg class="btn__img">
+      <use xlink:href="#cart" data-img="img/cart.png"></use>
+    </svg>
+    <noscript><img class="btn__img" src="img/cart.png" width="17"
+                   height="17" alt="cart"/></noscript>
+    <span class="btn__cart-empty">Пусто</span>
+    <span class="btn__cart-goods">2 товара</span>
+  </button>
+  <form action="#" class="cart__form" method="post">
+    <table class="cart__table">
+      <tr>
+        <td>
+          <a href="#" class="cart__link" role="button"></a>
+        </td>
+        <td>
+          <picture>
+            <source media="(min-width: 1200px)"
+                    srcset="img/cream-orange-big.png, img/cream-orange-big@2x.png 2x, img/cream-orange-big@3x.png 3x"
+                    sizes="(min-width: 1200px) 33px, 33px">
+            <source media="(min-width: 900px)"
+                    srcset="img/cream-orange.png, img/cream-orange@2x.png 2x, img/cream-orange@3x.png 3x"
+                    sizes="(min-width: 900px) 33px, 33px">
+            <img class="cart__img" src="/img/cream-orange.png" width="33" height="33" alt="cream-orange">
+          </picture>
+        </td>
+        <td>Пломбир с апельсиновым джемом</td>
+        <td>1,5 кг<span> х 200руб.</span></td>
+        <td>300 руб.</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#" class="cart__link" role="button"></a>
+        </td>
+        <td>
+          <picture>
+            <source media="(min-width: 1200px)"
+                    srcset="img/cream-strawberry-big.png, img/cream-strawberry-big@2x.png 2x, img/cream-strawberry-big@3x.png 3x"
+                    sizes="(min-width: 1200px) 33px, 33px">
+            <source media="(min-width: 900px)"
+                    srcset="img/cream-strawberry.png, img/cream-strawberry@2x.png 2x, img/cream-strawberry@3x.png 3x"
+                    sizes="(min-width: 900px) 33px, 33px">
+            <img class="cart__img" src="/img/cream-strawberry.png" width="33" height="33" alt="cream-strawberry">
+          </picture>
+        </td>
+        <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+        <td>1,5 кг<span> х 300руб.</span></td>
+        <td>450 руб.</td>
+      </tr>
+      <tr>
+        <td colspan="5">Итого: 750 руб.</td>
+      </tr>
+    </table>
+    <button class="btn btn--cart-form" type="submit">Оформить заказ</button>
+  </form>
+</div>

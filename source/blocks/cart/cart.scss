@@ -1,0 +1,115 @@
+.cart {
+  &__wrapper {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__wrapper:hover &__form {
+    display: block;
+
+    opacity: 1;
+  }
+
+  &__form {
+    position: absolute;
+    top: 3.2rem;
+    right: 0;
+
+    display: none;
+
+    width: 54rem;
+    padding: 2.5rem 1.5rem;
+
+    transition: opacity .5s ease;
+
+    opacity: 0;
+    border-radius: 5px;
+    background: #f8f7f4;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
+  }
+  &__table {
+    width: 100%;
+    margin: 0;
+
+    table-layout: fixed;
+
+    color: $black;
+
+    font-size: 1.3rem;
+  }
+
+  &__table td {
+    padding-bottom: 1.5rem;
+  }
+
+  &__table td:nth-child(1) {
+    width: 5%;
+  }
+  &__table td:nth-child(2) {
+    width: 10%;
+  }
+  &__table td:nth-child(3) {
+    width: 40%;
+    padding-right: 20px;
+  }
+  &__table td:nth-child(4) {
+    width: 20%;
+  }
+  &__table td:nth-child(5) {
+    width: 10%;
+  }
+
+  &__table span {
+    color: #9f9f9e;
+  }
+
+  &__table tr:last-child {
+    border-top: 1px solid $black;
+  }
+
+  &__table tr:last-child td {
+    padding-top: 1.5rem;
+
+    text-align: right;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__link {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    display: block;
+  }
+
+  &__link:after {
+    width: 10px;
+    height: 1px;
+    position: absolute;
+    content: '';
+    display: block;
+    transform: rotate(45deg);
+    background: $black;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  &__link:before {
+    width: 10px;
+    height: 1px;
+    position: absolute;
+    content: '';
+    display: block;
+    transform: rotate(-45deg);
+    background: $black;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}

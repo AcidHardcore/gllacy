@@ -1,0 +1,67 @@
+.entrance {
+
+  &__wrapper {
+    position: relative;
+    margin-right: 1rem;
+    z-index: 3;
+  }
+
+  &__wrapper:hover &__form {
+    display: block;
+
+    opacity: 1;
+  }
+
+  &__form {
+    position: absolute;
+    top: 3.2rem;
+    right: 0;
+
+    display: none;
+    clear: both;
+
+    width: 27.5rem;
+    min-height: 17.5rem;
+    padding: 15px 15px;
+
+    transition: opacity .5s ease;
+
+    opacity: 0;
+    border-radius: 5px;
+    background: #f8f7f4;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
+  }
+
+  &__input {
+    min-height: 4rem;
+    padding: 0 15px;
+
+    color: $black;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    margin-bottom: 10px;
+  }
+
+  &__link-wrapper {
+    float: right;
+
+    margin-top: 15px;
+  }
+
+  &__link {
+    display: block;
+
+    text-decoration: underline;
+
+    color: $black;
+
+    font-size: 1.3rem;
+    line-height: 1.84;
+
+    text-decoration-color: #3d8b3d;
+  }
+}

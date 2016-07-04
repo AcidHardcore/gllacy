@@ -2,19 +2,21 @@
 
 .btn {
   @include btn();
-  @include btn-color(#fff, $color-red, transparent);
+  @include btn-color(#ffffff, #f17d65, transparent);
   //@include btn-size();
 
+  border: 0;
+
   &--main {
-    @include btn-color(#fff, $color-main, $color-main);
+    @include btn-color(#ffffff, $color-main, $color-main);
   }
 
   &--danger {
-    @include btn-color(#fff, $color-danger, $color-danger);
+    @include btn-color(#ffffff, $color-danger, $color-danger);
   }
 
   &--success {
-    @include btn-color(#fff, $color-success, $color-success);
+    @include btn-color(#ffffff, $color-success, $color-success);
   }
 
   &--lg {
@@ -23,6 +25,122 @@
 
   &--sm {
     @include btn-size(sm);
+  }
+
+  &--search {
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 0;
+
+    border: 0;
+    border-radius: 50%;
+    background-color: #acc2b5;
+    background-image: none;
+    box-shadow: none;
+
+    font-weight: 500;
+  }
+
+  &--search:hover,
+  &--entrance:hover,
+  &--cart:hover,
+  &--search:focus,
+  &--entrance:focus,
+  &--cart:focus,
+  &--search:active,
+  &--entrance:active,
+  &--cart:active {
+    color: $black;
+    background-color: #f8f7f4;
+    background-image: none;
+  }
+
+  &--search:hover &__img,
+  &--entrance:hover &__img,
+  &--cart:hover &__img,
+  &--search:focus &__img,
+  &--entrance:focus &__img,
+  &--cart:focus &__img,
+  &--search:active &__img,
+  &--entrance:active &__img,
+  &--cart:active &__img {
+    background-image: none;
+    fill: $black;
+  }
+
+  &__img {
+    position: relative;
+
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-right: .5rem;
+
+    fill: $white;
+  }
+
+  &__img--search {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin: auto;
+  }
+
+  &--entrance {
+    width: 9.2rem;
+    height: 3.2rem;
+    padding: 0;
+
+    background-color: #acc2b5;
+    background-image: none;
+    box-shadow: none;
+
+    font-weight: 500;
+  }
+  &--entrance-form {
+    float: left;
+
+    margin-top: 15px;
+    padding: 1rem 3.3rem;
+
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  &--cart {
+    width: 11.7rem;
+    height: 3.2rem;
+    padding: 0;
+
+    background-color: #acc2b5;
+    background-image: none;
+    box-shadow: none;
+
+    font-weight: 500;
+  }
+
+  &__cart-goods {
+    display: none;
+  }
+
+  &--cart:hover &__cart-empty,
+  &--cart:active &__cart-empty,
+  &--cart:focus &__cart-empty {
+    display: none;
+  }
+  &--cart:hover &__cart-goods,
+  &--cart:active &__cart-goods,
+  &--cart:focus &__cart-goods {
+    display: inline;
+  }
+
+  &--cart-form {
+    float: right;
+
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    line-height: 1.6;
   }
 
   &--block {

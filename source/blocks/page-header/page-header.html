@@ -8,27 +8,8 @@
 <header class="page-header">
   @@include('../../blocks/logo/logo.html')
   @@include('../../blocks/page-nav/page-nav.html')
-  <button class="btn btn--search" type="button">
-    <svg class="page-header__img">
-      <use xlink:href="#search" data-img="img/search.png"></use>
-    </svg>
-    <noscript><img class="page-header__img" src="img/search.png" width="17"
-                   height="17" alt="search"/></noscript>
-  </button>
-  <button class="btn btn--entrance" type="button">
-    <svg class="page-header__img">
-      <use xlink:href="#entrance" data-img="img/entrance.png"></use>
-    </svg>
-    <noscript><img class="page-header__img" src="img/entrance.png" width="17"
-                   height="17" alt="entrance"/></noscript>
-    Вход
-  </button>
-  <button class="btn btn--cart" type="button">
-    <svg class="page-header__img">
-      <use xlink:href="#cart" data-img="img/cart.png"></use>
-    </svg>
-    <noscript><img class="page-header__img" src="img/cart.png" width="17"
-                   height="17" alt="cart"/></noscript>
-    Пусто
-  </button>
+  @@include('../../blocks/search/search.html')
+  @@include('../../blocks/entrance/entrance.html')
+  @@include('../../blocks/cart/cart.html')
+  @@include('../../blocks/time-tel/time-tel.html')
 </header>

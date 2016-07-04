@@ -1,0 +1,19 @@
+.time-tel {
+  position: absolute;
+  right: 0;
+  bottom: -4rem;
+  //color: $black;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+
+  & span:first-child {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  & span:last-child {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+}
