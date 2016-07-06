@@ -12,15 +12,14 @@
   display: inline-flex;
 
   box-sizing: border-box;
+  min-height: .5rem;
   padding: $field-padding-top $field-padding-horizontal $field-padding-bottom;
 
   cursor: pointer;
-  user-select: none;
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
   text-decoration: none;
-  //min-height: 2.125em;
   //border: 1px solid;
 
   border-radius: $border-radius;
@@ -30,7 +29,7 @@
 
   font-size: 1.8rem;
   font-weight: 700;
-  line-height: $line-height;
+  line-height: 1.375;
 
   align-items: center;
   justify-content: center;

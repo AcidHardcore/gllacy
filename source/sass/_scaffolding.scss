@@ -60,6 +60,9 @@ html {
 body {
   min-height: 100%;
   margin: 0;
+  //background: radial-gradient(rgba(0,0,0, .8), rgba(0,0,0, .7));
+
+  transition: all .3s;
 
   color: $text-color;
   background-color: $body-bg;
@@ -67,8 +70,6 @@ body {
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
-  //background: radial-gradient(rgba(0,0,0, .8), rgba(0,0,0, .7));
-  transition: all .3s;
 }
 
 .body-bgc-1-js {
@@ -117,7 +118,6 @@ body {
 
 .container {
   @include container();
-
 }
 
 h1 {

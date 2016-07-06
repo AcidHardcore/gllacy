@@ -14,12 +14,11 @@
 
     touch-action: pan-y;
   }
-  
+
   &__active &__slides > * {
     float: left;
 
     margin: 0;
-
   }
 
   &__active &__slides a:active,
@@ -50,28 +49,34 @@
 
   /* dots */
   &__dots {
+    display: flex;
+
+    width: 9rem;
+    //height: 4rem;
     margin: 0;
     padding: 0;
-
+    bottom: 18%;
+    position: absolute;
     list-style-type: none;
 
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__dots > li {
-    position: relative;
-
-    display: inline-block;
-
-    width: 12px;
-    height: 12px;
-    padding: 0 15px;
-    padding-top: 50px;
-
+    border: 2px solid #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     cursor: pointer;
-    user-select: none;
-    vertical-align: middle;
+  }
 
-    -webkit-tap-highlight-color: transparent;
+  &__active-dot,
+  &__dots > li:active {
+    background: #ffffff;
   }
 
   &__dots > li &__mouse-clicked,
@@ -81,29 +86,33 @@
   }
 
   &__dots > li > span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    display: inline-block;
-
-    width: 8px;
-    height: 8px;
-    margin: -4px 0 0 -4px;
+    width: 100%;
+    height: 100%;
 
     border-radius: 50%;
-    background: #9b9890;
+    background: transparent;
   }
   &__dots > li > span:hover {
-    background-color: #7e868f;
+    opacity: 0.5;
+    background: #ffffff;
   }
 
-  &__dots > li &__active-dot > span {
-    width: 12px;
-    height: 12px;
-    margin: -6px 0 0 -6px;
+  &__title {
+    position: absolute;
+    top: 18rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
-    border: 3px solid red;
-    background: transparent;
+    width: 75rem;
+    height: 16rem;
+    margin: auto;
+
+    color: #fcefd0;
+
+    font-family: "Roboto Black", sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1;
   }
 }
