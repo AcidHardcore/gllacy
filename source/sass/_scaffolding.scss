@@ -67,6 +67,20 @@ body {
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
+  //background: radial-gradient(rgba(0,0,0, .8), rgba(0,0,0, .7));
+  transition: all .3s;
+}
+
+.body-bgc-1-js {
+  background-color: #849d8f;
+}
+
+.body-bgc-2-js {
+  background-color: #8996a6;
+}
+
+.body-bgc-3-js {
+  background-color: #9d8b84;
 }
 
 @font-face {
@@ -77,13 +91,13 @@ body {
   src: url("../font/roboto.woff"); /* разные файлы */
 }
 
-//@font-face {
-//  font-family: "Roboto";       /* название одно */
-//  font-weight: 500;              /* разная плотность */
-//  font-style: normal;
-//
-//  src: url("../font/robotomedium.woff"); /* разные файлы */
-//}
+@font-face {
+  font-family: "Roboto Black";       /* название одно */
+  font-weight: 400;              /* разная плотность */
+  font-style: normal;
+
+  src: url("../font/Roboto-Black.woff"); /* разные файлы */
+}
 
 @font-face {
   font-family: "Roboto";       /* название одно */
@@ -104,7 +118,6 @@ body {
 .container {
   @include container();
 
-  background-color: $color-main;
 }
 
 h1 {

@@ -4,7 +4,9 @@
 @import "../../sass/mixins/mixins";
 
 .page-header {
-  display: flex;
   position: relative;
+
+  display: flex;
+
   align-items: center;
 }

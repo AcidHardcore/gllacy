@@ -31,13 +31,12 @@
     width: 3.2rem;
     height: 3.2rem;
     padding: 0;
-
+    transition: all .3s;
     border: 0;
     border-radius: 50%;
-    background-color: #acc2b5;
     background-image: none;
     box-shadow: none;
-
+    background-color: #abc1b5;
     font-weight: 500;
   }
 
@@ -65,6 +64,7 @@
   &--entrance:active &__img,
   &--cart:active &__img {
     background-image: none;
+
     fill: $black;
   }
 
@@ -91,11 +91,10 @@
     width: 9.2rem;
     height: 3.2rem;
     padding: 0;
-
-    background-color: #acc2b5;
+    transition: all .3s;
     background-image: none;
     box-shadow: none;
-
+    background-color: #abc1b5;
     font-weight: 500;
   }
   &--entrance-form {
@@ -112,11 +111,10 @@
     width: 11.7rem;
     height: 3.2rem;
     padding: 0;
-
-    background-color: #acc2b5;
+    transition: all .3s;
     background-image: none;
     box-shadow: none;
-
+    background-color: #abc1b5;
     font-weight: 500;
   }
 
@@ -139,8 +137,26 @@
     float: right;
 
     padding: 1rem 2.5rem;
+
     font-size: 1.5rem;
     line-height: 1.6;
+  }
+
+  &--search-bgc-1-js,
+  &--entrance-bgc-1-js,
+  &--cart-bgc-1-js {
+    background-color: #abc1b5;
+  }
+  &--search-bgc-2-js,
+  &--entrance-bgc-2-js,
+  &--cart-bgc-2-js {
+    background-color: #b4c1cd;
+  }
+
+  &--entrance-bgc-3-js,
+  &--cart-bgc-3-js,
+  &--search-bgc-3-js {
+    background-color: #c7b8b2;
   }
 
   &--block {

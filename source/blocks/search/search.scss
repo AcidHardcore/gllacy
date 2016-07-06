@@ -1,9 +1,9 @@
 .search {
   &__wrapper {
     position: relative;
+    z-index: 3;
 
     margin-right: 1rem;
-    z-index: 3;
   }
 
   &__wrapper:hover &__form {

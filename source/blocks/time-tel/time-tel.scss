@@ -3,8 +3,10 @@
   right: 0;
   bottom: -4rem;
   //color: $black;
+
   display: flex;
   flex-direction: column;
+
   text-align: right;
 
   & span:first-child {
@@ -13,7 +15,7 @@
   }
 
   & span:last-child {
+    font-family: "Roboto Black", sans-serif;
     font-size: 2.2rem;
-    font-weight: 700;
   }
 }
