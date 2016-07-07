@@ -1,0 +1,57 @@
+.goods {
+  margin-top: 40px;
+
+  //&__wrapper {
+    @include row();
+  //}
+
+  &__item {
+    @include col(lg, 1);
+    position: relative;
+  }
+  &__hit {
+  }
+
+  &__item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    @media (min-width: $screen-xl) {
+      width: 267px;
+      height: 267px;
+    }
+  }
+
+  &__price {
+    margin-top: 42%;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1;
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__p-img {
+    width: 3.2rem;
+    height: 3.7rem;
+    fill: #ffffff;
+    align-self: center;
+  }
+
+  &__weight {
+    font-size: 2.6rem;
+  }
+
+  &__desc {
+    margin-bottom: 0;
+    font-weight: 500;
+    margin-top: 30px;
+    text-align: center;
+    @media (min-width: $screen-xl) {
+      margin-top:70px;
+    }
+  }
+}

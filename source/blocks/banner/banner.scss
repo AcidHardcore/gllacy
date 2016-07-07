@@ -1,23 +1,19 @@
 .banner {
   margin-top: -20px;
-  &__container {
-    @include container();
-  }
-
-  &__wrapper {
     @include row();
-  }
 
   &__left {
-    @include col(lg, 1.897);
+    @include col(lg, 1.95);
+
     z-index: 3;
+
     padding-top: 20px;
     padding-bottom: 20px;
 
+    border-radius: 15px;
     background-image: url("/img/bg-raspberry.png");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 15px;
     @media(min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url("/img/bg-raspberry@2x.png");
@@ -29,16 +25,18 @@
   }
 
   &__right {
-    @include col(lg, 1.897);
+    @include col(lg, 1.95);
+
     z-index: 3;
+
     margin-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
 
+    border-radius: 15px;
     background-image: url("/img/bg-chocolate.png");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 15px;
     @media(min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url("/img/bg-chocolate@2x.png");

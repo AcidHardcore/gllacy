@@ -66,9 +66,9 @@ $screen-xl: 1200px;
 $screen-xxl: 1800px;
 $container-sm: 100%;
 $container-md: 100%;
-$container-lg: $screen-lg;
+$container-lg: $screen-lg - $grid-gutter-width;
 $container-xl: $screen-xl - $grid-gutter-width;
-$container-xxl: $screen-xxl - remToPx($grid-gutter-width);
+$container-xxl: $screen-xxl - $grid-gutter-width;
 
 
 

@@ -1,4 +1,6 @@
 .slider {
+  margin-left: $grid-gutter-width/ -2;
+  margin-right: $grid-gutter-width/ -2;
   &__active {
     position: relative;
 
@@ -9,6 +11,7 @@
 
   &__active &__slides {
     position: relative;
+
     overflow: hidden; /* clearfix */
 
     touch-action: pan-y;
@@ -37,8 +40,8 @@
   &__mouse &__slides {
     cursor: move;
     cursor: -webkit-grab;
-    cursor: -moz-grab;
-    cursor: grab;
+    cursor:    -moz-grab;
+    cursor:         grab;
     user-select: none;
   }
 
@@ -47,11 +50,12 @@
   }
 
   &__figure-1 {
+    min-height: 584px;
+
     background-image: url("/img/slider1.png");
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: 50% 50%;
-    min-height: 584px;
+    background-size: contain;
     @media(min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url("/img/slider1@2x.png");
@@ -63,11 +67,12 @@
   }
 
   &__figure-2 {
+    min-height: 584px;
+
     background-image: url("/img/slider2.png");
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: 50% 50%;
-    min-height: 584px;
+    background-size: contain;
     @media(min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url("/img/slider2@2x.png");
@@ -79,11 +84,12 @@
   }
 
   &__figure-3 {
+    min-height: 584px;
+
     background-image: url("/img/slider3.png");
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: 50% 50%;
-    min-height: 584px;
+    background-size: contain;
     @media(min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url("/img/slider3@2x.png");
