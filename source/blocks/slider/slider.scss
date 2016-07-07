@@ -9,7 +9,6 @@
 
   &__active &__slides {
     position: relative;
-
     overflow: hidden; /* clearfix */
 
     touch-action: pan-y;
@@ -47,16 +46,66 @@
     cursor: move;
   }
 
+  &__figure-1 {
+    background-image: url("/img/slider1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    min-height: 584px;
+    @media(min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("/img/slider1@2x.png");
+    }
+    @media(min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+      background-image: url("/img/slider1@3x.png");
+    }
+  }
+
+  &__figure-2 {
+    background-image: url("/img/slider2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    min-height: 584px;
+    @media(min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("/img/slider2@2x.png");
+    }
+    @media(min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+      background-image: url("/img/slider2@3x.png");
+    }
+  }
+
+  &__figure-3 {
+    background-image: url("/img/slider3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    min-height: 584px;
+    @media(min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("/img/slider3@2x.png");
+    }
+    @media(min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+      background-image: url("/img/slider3@3x.png");
+    }
+  }
+
   /* dots */
   &__dots {
+    position: absolute;
+    top: 473px;
+
     display: flex;
 
     width: 9rem;
     //height: 4rem;
     margin: 0;
     padding: 0;
-    bottom: 18%;
-    position: absolute;
+
     list-style-type: none;
 
     align-items: center;
@@ -64,14 +113,18 @@
   }
 
   &__dots > li {
-    border: 2px solid #fff;
+    display: flex;
+
     width: 2.5rem;
     height: 2.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+
     cursor: pointer;
+
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+
+    align-items: center;
+    justify-content: center;
   }
 
   &__active-dot,
@@ -93,13 +146,13 @@
     background: transparent;
   }
   &__dots > li > span:hover {
-    opacity: 0.5;
+    opacity: .5;
     background: #ffffff;
   }
 
   &__title {
     position: absolute;
-    top: 18rem;
+    top: 205px;
     right: 0;
     bottom: 0;
     left: 0;

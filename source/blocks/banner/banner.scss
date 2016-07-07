@@ -1,0 +1,65 @@
+.banner {
+  margin-top: -20px;
+  &__container {
+    @include container();
+  }
+
+  &__wrapper {
+    @include row();
+  }
+
+  &__left {
+    @include col(lg, 1.897);
+    z-index: 3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-image: url("/img/bg-raspberry.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    @media(min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("/img/bg-raspberry@2x.png");
+    }
+    @media(min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+      background-image: url("/img/bg-raspberry@3x.png");
+    }
+  }
+
+  &__right {
+    @include col(lg, 1.897);
+    z-index: 3;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-image: url("/img/bg-chocolate.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    @media(min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("/img/bg-chocolate@2x.png");
+    }
+    @media(min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+      background-image: url("/img/bg-chocolate@3x.png");
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.375;
+  }
+
+  &__desc {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.375;
+  }
+}
