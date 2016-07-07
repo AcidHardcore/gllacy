@@ -5,9 +5,11 @@
 
 .page-header {
   position: relative;
-  margin-left: $grid-gutter-width/ -2;
-  margin-right: $grid-gutter-width/ -2;
+
   display: flex;
+
+  margin-right: $grid-gutter-width/ -2;
+  margin-left: $grid-gutter-width/ -2;
 
   align-items: center;
 }

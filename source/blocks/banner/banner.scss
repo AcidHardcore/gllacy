@@ -1,6 +1,7 @@
 .banner {
+  @include row();
+
   margin-top: -20px;
-    @include row();
 
   &__left {
     @include col(lg, 1.95);
