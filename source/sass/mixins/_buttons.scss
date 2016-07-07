@@ -9,7 +9,7 @@
 
 @mixin btn() {
   //position: relative;
-  display: inline-flex;
+  display: inline-block;
 
   box-sizing: border-box;
   min-height: .5rem;

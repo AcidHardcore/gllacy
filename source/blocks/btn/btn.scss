@@ -36,7 +36,8 @@
 
     border: 0;
     border-radius: 50%;
-    background-color: #abc1b5;
+    background-color: rgba(255, 255, 255, .3);
+
     background-image: none;
     box-shadow: none;
 
@@ -97,7 +98,8 @@
 
     transition: all .3s;
 
-    background-color: #abc1b5;
+    background-color: rgba(255, 255, 255, .3);
+
     background-image: none;
     box-shadow: none;
 
@@ -120,7 +122,7 @@
 
     transition: all .3s;
 
-    background-color: #abc1b5;
+    background-color: rgba(255, 255, 255, .3);
     background-image: none;
     box-shadow: none;
 
@@ -151,23 +153,6 @@
     line-height: 1.6;
   }
 
-  &--search-bgc-1-js,
-  &--entrance-bgc-1-js,
-  &--cart-bgc-1-js {
-    background-color: #abc1b5;
-  }
-  &--search-bgc-2-js,
-  &--entrance-bgc-2-js,
-  &--cart-bgc-2-js {
-    background-color: #b4c1cd;
-  }
-
-  &--entrance-bgc-3-js,
-  &--cart-bgc-3-js,
-  &--search-bgc-3-js {
-    background-color: #c7b8b2;
-  }
-
   &--slider {
     margin-top: 451px;
 
@@ -180,6 +165,14 @@
     float: right;
   }
 
+  &--product {
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+    opacity: 0;
+    transition: all .3s;
+  }
 
   &--block {
     width: 100%;

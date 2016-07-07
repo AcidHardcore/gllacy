@@ -1,5 +1,18 @@
 .hits {
   @include row();
 
+  position: relative;
+
   margin-top: 40px;
+
+  &__img {
+    position: absolute;
+    z-index: 3;
+    top: 15px;
+    left: 12px;
+
+    @media (min-width: $screen-xl) {
+      left: 32px;
+    }
+  }
 }
