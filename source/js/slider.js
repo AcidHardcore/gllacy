@@ -13,7 +13,7 @@ var slider = Peppermint(document.getElementById('peppermint'), {
     slideshowInterval: 5000,
     stopSlideshowAfterInteraction: true,
     cssPrefix: 'slider__',
-    onSlideChange: changeBodyBackground
+    onSlideChange: changeBackground
     // dotsContainer: document.querySelector('.slider__paginator')
     //dotsPrepend: true //dots above, false: dots below
     // onSetup: function(n) {
@@ -21,12 +21,12 @@ var slider = Peppermint(document.getElementById('peppermint'), {
     // }
 });
 
-// function changeBackground (activeSlide){
-//     changeBodyBackground (activeSlide);
-//     changeSearchBtnBackground (activeSlide);
-//     changeEntranceBtnBackground (activeSlide);
-//     changeCartBtnBackground (activeSlide);
-// }
+function changeBackground (activeSlide){
+    changeBodyBackground (activeSlide);
+    changeGlowBackground (activeSlide);
+    // changeEntranceBtnBackground (activeSlide);
+    // changeCartBtnBackground (activeSlide);
+}
 
 function changeBodyBackground(activeSlide) {
     var slideBodyBgClass = [
@@ -40,6 +40,20 @@ function changeBodyBackground(activeSlide) {
     });
 
     body.classList.add(slideBodyBgClass[activeSlide]);
+}
+
+function changeGlowBackground(activeSlide) {
+    var slideGlowBgClass = [
+        'glow--slide-1-js',
+        'glow--slide-2-js',
+        'glow--slide-3-js'
+    ];
+
+    slideGlowBgClass.forEach(function (el, i) {
+        body.classList.remove(el);
+    });
+
+    body.classList.add(slideGlowBgClass[activeSlide]);
 }
 
 //sliderReview prev button
