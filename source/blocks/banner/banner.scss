@@ -11,7 +11,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-    border-radius: 15px;
+    border-radius: $border-radius;
     background-image: url("/img/bg-raspberry.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +34,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-    border-radius: 15px;
+    border-radius: $border-radius;
     background-image: url("/img/bg-chocolate.png");
     background-repeat: no-repeat;
     background-size: cover;

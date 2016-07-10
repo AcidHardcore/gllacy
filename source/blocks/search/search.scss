@@ -23,7 +23,7 @@
     min-height: 7rem;
     padding: 15px 15px;
 
-    transition: opacity .5s ease;
+    transition: opacity $transition-time ease;
 
     opacity: 0;
     border-radius: 5px;

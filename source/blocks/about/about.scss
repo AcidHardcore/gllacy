@@ -1,9 +1,9 @@
 .about {
   @include row();
   padding: 25px;
-  -webkit-border-radius: 18px;
-  -moz-border-radius: 18px;
-  border-radius: 18px;
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  border-radius: $border-radius;
   background-image: url("/img/bg-about.jpg");
   background-repeat: no-repeat;background-position: 50% 50%;
   background-size: cover;

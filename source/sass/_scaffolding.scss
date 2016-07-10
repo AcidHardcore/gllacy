@@ -62,7 +62,7 @@ body {
   margin: 0;
   //background: radial-gradient(rgba(0,0,0, .8), rgba(0,0,0, .7));
 
-  transition: all .3s;
+  transition: all $transition-time;
 
   color: $text-color;
   background-color: $body-bg;

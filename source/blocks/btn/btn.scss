@@ -32,7 +32,7 @@
     height: 3.2rem;
     padding: 0;
 
-    transition: all .3s;
+    transition: all $transition-time;
 
     border: 0;
     border-radius: 50%;
@@ -110,7 +110,7 @@
     height: 3.2rem;
     padding: 0;
 
-    transition: all .3s;
+    transition: all $transition-time;
 
     background-color: rgba(255, 255, 255, .3);
     background-image: none;
@@ -133,7 +133,7 @@
     height: 3.2rem;
     padding: 0;
 
-    transition: all .3s;
+    transition: all $transition-time;
 
     background-color: rgba(255, 255, 255, .3);
     background-image: none;
@@ -186,7 +186,7 @@
     margin-right: auto;
     margin-left: auto;
 
-    transition: all .3s;
+    transition: all $transition-time;
 
     opacity: 0;
   }
