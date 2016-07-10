@@ -40,8 +40,8 @@
   &__mouse &__slides {
     cursor: move;
     cursor: -webkit-grab;
-    cursor:    -moz-grab;
-    cursor:         grab;
+    cursor: -moz-grab;
+    cursor: grab;
     user-select: none;
   }
 
@@ -51,7 +51,8 @@
 
   &__figure-1 {
     min-height: 584px;
-
+    position: relative;
+    text-align: center;
     background-image: url("/img/slider1.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -68,7 +69,8 @@
 
   &__figure-2 {
     min-height: 584px;
-
+    position: relative;
+    text-align: center;
     background-image: url("/img/slider2.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -85,7 +87,8 @@
 
   &__figure-3 {
     min-height: 584px;
-
+    position: relative;
+    text-align: center;
     background-image: url("/img/slider3.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
