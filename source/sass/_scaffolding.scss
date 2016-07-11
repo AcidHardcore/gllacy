@@ -65,6 +65,7 @@ body {
 
   color: $text-color;
   background-color: $body-bg;
+  background-image: radial-gradient(40% 40% at 50% 15% , rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .5) 25%, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, .3) 75%, rgba(255, 255, 255, .2) 100%);
 
   font-family: $font-family;
   font-size: $font-size;
@@ -107,19 +108,34 @@ body {
   src: url("../font/roboto.woff2"); /* разные файлы */
 }
 
-//@font-face {
-//  font-family: "Roboto";       /* название одно */
-//  font-weight: 500;              /* разная плотность */
-//  font-style: normal;
-//
-//  src: url("../font/robotomedium.woff2"); /* разные файлы */
-//}
+@font-face {
+  font-family: "Roboto";       /* название одно */
+  font-weight: 500;              /* разная плотность */
+  font-style: normal;
+
+  src: url("../font/robotomedium.woff"); /* разные файлы */
+}
+
+@font-face {
+  font-family: "Roboto";       /* название одно */
+  font-weight: 500;              /* разная плотность */
+  font-style: normal;
+
+  src: url("../font/robotomedium.woff2"); /* разные файлы */
+}
 
 .container {
   @include container();
 
+  position: relative;
+
   max-width: 1200px;
-  //position: relative;
+}
+
+.wrapper-blog-newletter {
+  @include row();
+
+  margin-top: 40px;
 }
 
 h1 {

@@ -6,19 +6,22 @@
   <title>Gllacy</title>
 </head>
 <body>
-<div class="container">
+<main class="container">
   @@include('blocks/page-header/page-header.html')
   @@include('blocks/slider/slider.html')
-  @@include('blocks/glow/glow.html')
   @@include('blocks/banner/banner.html')
   @@include('blocks/hits/hits.html')
   @@include('blocks/about/about.html')
-  @@include('blocks/blog/blog.html')
-  @@include('blocks/newsletter/newsletter.html')
+  <div class="wrapper-blog-newletter">
+    @@include('blocks/blog/blog.html')
+    @@include('blocks/newsletter/newsletter.html')
+  </div>
+  @@include('blocks/map/map.html')
+
 
 
   @@include('blocks/page-footer/page-footer.html')
-</div>
+</main>
 @@include('_include/page-bottom.html')
 </body>
 </html>

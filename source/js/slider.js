@@ -1,9 +1,8 @@
 // var butPrev = document.querySelector('.review__prev-js');
 // var butNext = document.querySelector('.review__next-js');
 var body = document.querySelector('body');
-var search = document.querySelector('.btn--search');
-var entrance = document.querySelector('.btn--entrance');
-var cart = document.querySelector('.btn--cart');
+var glow = document.querySelector('.glow');
+
 
 // create sliderReview
 var slider = Peppermint(document.getElementById('peppermint'), {
@@ -23,7 +22,7 @@ var slider = Peppermint(document.getElementById('peppermint'), {
 
 function changeBackground (activeSlide){
     changeBodyBackground (activeSlide);
-    changeGlowBackground (activeSlide);
+    // changeGlowBackground (activeSlide);
     // changeEntranceBtnBackground (activeSlide);
     // changeCartBtnBackground (activeSlide);
 }
@@ -42,7 +41,7 @@ function changeBodyBackground(activeSlide) {
     body.classList.add(slideBodyBgClass[activeSlide]);
 }
 
-function changeGlowBackground(activeSlide) {
+/*function changeGlowBackground(activeSlide) {
     var slideGlowBgClass = [
         'glow--slide-1-js',
         'glow--slide-2-js',
@@ -54,7 +53,7 @@ function changeGlowBackground(activeSlide) {
     });
 
     body.classList.add(slideGlowBgClass[activeSlide]);
-}
+}*/
 
 //sliderReview prev button
 // butPrev.addEventListener('tap', function (event) {

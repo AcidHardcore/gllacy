@@ -81,8 +81,9 @@
     width: 1.7rem;
     height: 1.7rem;
     margin: auto;
-    fill-rule: evenodd;
+
     fill: $white;
+    fill-rule: evenodd;
   }
 
   &__img-wrapper {
@@ -189,6 +190,14 @@
     transition: all $transition-time;
 
     opacity: 0;
+  }
+
+  &--newsletter {
+    float: right;
+  }
+
+  &--map {
+    width: 100%;
   }
 
   &--block {
