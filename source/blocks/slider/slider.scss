@@ -119,8 +119,8 @@
 
     display: flex;
 
-    width: 9rem;
-    //height: 4rem;
+    width: 90px;
+    //height: 40px;
     margin: 0;
     padding: 0;
 
@@ -133,8 +133,8 @@
   &__dots > li {
     display: flex;
 
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 25px;
+    height: 25px;
 
     cursor: pointer;
 
@@ -175,14 +175,14 @@
     bottom: 0;
     left: 0;
 
-    width: 75rem;
-    height: 16rem;
+    width: 750px;
+    height: 160px;
     margin: auto;
 
     color: #fcefd0;
 
     font-family: "Roboto Black", sans-serif;
-    font-size: 6rem;
+    font-size: 60px;
     font-weight: 700;
     line-height: 1;
   }

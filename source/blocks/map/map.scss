@@ -1,14 +1,29 @@
 .map {
   position: relative;
 
-  min-height: 43rem;
+  min-height: 430px;
   margin-top: 40px;
-  margin-right: -31px;
-  margin-left: -32px;
+  //margin-right: -31px;
+  //margin-left: -32px;
 
   background-image: url("/img/bg-map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $screen-md) {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-right: -31.5px;
+    margin-left: -31.5px;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-right: -40px;
+    margin-left: -40px;
+  }
   //display: flex;
   //justify-content: center;
   //align-items: center;
@@ -23,8 +38,8 @@
     display: flex;
     flex-direction: column;
 
-    width: 30rem;
-    height: 30.5rem;
+    width: 300px;
+    height: 305px;
     margin: auto;
     padding: 30px 25px;
 
@@ -39,25 +54,26 @@
     display: flex;
     flex-direction: column;
 
-    min-height: 17.5rem;
+    min-height: 175px;
     margin: 0;
 
     justify-content: space-between;
   }
 
   &__regular-text {
-    font-size: 1.4rem;
+    font-size: 14px;
     line-height: 1.428;
   }
 
   &__bold-text {
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1.333;
   }
   &__yandex-placemark {
     width: 218px;
     height: 142px;
+
     background-image: url("/img/map-pin.png");
   }
 }

@@ -5,6 +5,8 @@
   margin-right: auto;
   margin-left: 15px;
 
+  font-size: 16px;
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -32,8 +34,8 @@
   &__link {
     display: block;
 
-    min-height: $line-height + pxToRem(15px);
-    padding: 1rem 15px;
+    min-height: 37px;
+    padding: 10px 15px;
 
     text-decoration: none;
 
@@ -112,12 +114,12 @@
   &__list-lvl2 {
     position: absolute;
     z-index: 3;
-    top: 4.3rem;
+    top: 43px;
     left: -5px;
 
     display: none;
 
-    min-width: 15.8rem;
+    min-width: 158px;
     margin: 0;
     padding: 0;
 
@@ -162,25 +164,27 @@
   &__link-lvl2 {
     display: block;
 
-    padding: .5rem 20px;
+    padding: 5px 20px;
 
     cursor: pointer;
     text-decoration: none;
 
     color: $black;
 
-    font-size: 1.4rem;
+    font-size: 14px;
+    font-weight: 400;
   }
 
   &__link-lvl2::after {
     opacity: 0;
   }
 
-  &__item-lvl2:first-child {
-    min-height: 32px;
+  &__link-lvl2--bold {
+    font-weight: 700 ;
+  }
 
-    font-weight: 700;
-    //position: relative;
+  &__item-lvl2 {
+    min-height: 36px;
   }
 
   &__item-lvl2:first-child::after {

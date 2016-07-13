@@ -28,8 +28,8 @@
   }
 
   &--search {
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 32px;
+    height: 32px;
     padding: 0;
 
     transition: all $transition-time;
@@ -78,8 +78,8 @@
     bottom: 0;
     left: 0;
 
-    width: 1.7rem;
-    height: 1.7rem;
+    width: 17px;
+    height: 17px;
     margin: auto;
 
     fill: $white;
@@ -91,9 +91,9 @@
 
     display: inline-block;
 
-    width: 1.7rem;
-    height: 1.7rem;
-    margin-right: .5rem;
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
   }
 
   &__img--search {
@@ -107,8 +107,8 @@
   }
 
   &--entrance {
-    width: 9.2rem;
-    height: 3.2rem;
+    width: 92px;
+    height: 32px;
     padding: 0;
 
     transition: all $transition-time;
@@ -123,15 +123,15 @@
     float: left;
 
     margin-top: 15px;
-    padding: 1rem 3.3rem;
+    padding: 10px 33px;
 
-    font-size: 1.5rem;
+    font-size: 15px;
     line-height: 1.6;
   }
 
   &--cart {
-    width: 11.7rem;
-    height: 3.2rem;
+    width: 117px;
+    height: 32px;
     padding: 0;
 
     transition: all $transition-time;
@@ -161,22 +161,23 @@
   &--cart-form {
     float: right;
 
-    padding: 1rem 2.5rem;
+    padding: 10px 25px;
 
-    font-size: 1.5rem;
+    font-size: 15px;
     line-height: 1.6;
   }
 
   &--slider {
     margin-top: 451px;
 
-    font-size: 3.2rem;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.25;
   }
 
   &--banner {
-    float: right;
+    //float: right;
+    margin-left: auto;
   }
 
   &--product {
@@ -198,6 +199,10 @@
 
   &--map {
     width: 100%;
+  }
+
+  &--feedback {
+    margin-left: auto;
   }
 
   &--block {

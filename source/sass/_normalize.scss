@@ -365,9 +365,9 @@ input[type="number"]::-webkit-outer-spin-button {
  */
 
 input[type="search"] {
-  -webkit-box-sizing: content-box; /* 2 */
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
+  -webkit-box-sizing: border-box; /* 2 */
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 
   -webkit-appearance: textfield; /* 1 */
 }

@@ -12,13 +12,13 @@
 
   &__form {
     position: absolute;
-    top: 3.2rem;
+    top: 32px;
     right: 0;
 
     display: none;
 
-    width: 54rem;
-    padding: 2.5rem 1.5rem;
+    width: 540px;
+    padding: 25px 15px;
 
     transition: opacity $transition-time ease;
 
@@ -35,11 +35,11 @@
 
     color: $black;
 
-    font-size: 1.3rem;
+    font-size: 13px;
   }
 
   &__table td {
-    padding-bottom: 1.5rem;
+    padding-bottom: 15px;
   }
 
   &__table td:nth-child(1) {
@@ -68,11 +68,11 @@
   }
 
   &__table tr:last-child td {
-    padding-top: 1.5rem;
+    padding-top: 15px;
 
     text-align: right;
 
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: 700;
   }
 

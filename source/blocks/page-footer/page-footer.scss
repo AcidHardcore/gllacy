@@ -2,11 +2,133 @@
 @import "../../sass/variables"; // только для удобства обращения к переменным
 
 .page-footer {
-  &__container {
-    @include container();
+  @include row();
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-size: 13px;
+
+  align-items: flex-start;
+
+  &__social-wrapper {
+    @include col(xs, 4);
+    @include col(md, 1.5);
+    @include col(lg, 1);
+
+    @media (min-width: $screen-xs) {
+      display: flex;
+
+      justify-content: space-around;
+    }
   }
 
-  &__wrapper {
-    @include row();
+  &__articles {
+    @include col(xs, 4);
+    @include col(md, 2.5);
+    @include col(lg, 2);
+
+    margin: 0;
+
+    border-spacing: 30px 0;
+
+    border-collapse: separate;
+  }
+
+  &__articles table {
+    min-width: 336px;
+    margin: 0 auto;
+  }
+
+  &__heart-wrapper {
+    position: relative;
+
+    font-weight: 700;
+  }
+
+  &__copyright-wrapper {
+    @include col(xs, 4);
+    @include col(md, 4);
+    @include col(lg, 1, 4, 0);
+
+    //@include col-offset(md,1);
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      align-items: center;
+      justify-content:space-around;
+      margin-top: 20px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 0;
+    }
+  }
+
+  &__social {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 32px;
+    height: 32px;
+    margin: auto;
+
+    fill: #ffffff;
+    fill-opacity: .8;
+  }
+
+  &__stroke {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 37px;
+    height: 37px;
+    margin: auto;
+
+    fill: rgba(255, 255, 255, .5);
+    fill-rule: evenodd;
+  }
+
+  &__img-wrapper {
+    position: relative;
+
+    width: 37px;
+    height: 37px;
+  }
+
+  &__heart {
+    position: absolute;
+    top: 5px;
+    left: -20px;
+
+    width: 15px;
+    height: 13px;
+
+    fill: rgba(255, 255, 255, .8);
+    fill-rule: evenodd;
+    stroke: rgba(255, 255, 255, .5);
+  }
+
+  &__logo {
+    width: 108px;
+    height: 37px;
+
+    fill: rgba(255, 255, 255, .9);
+  }
+
+  &__copyright {
+    width: 210px;
+    display: inline;
+
+    @media (min-width: $screen-lg) {
+      display: block;
+    }
+
   }
 }

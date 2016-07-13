@@ -1,5 +1,5 @@
 .blog {
-  @include col(lg, 1.95);
+  @include col(md, 1.95);
 
   padding: 30px 25px;
 
@@ -24,6 +24,7 @@
   }
 
   &__title {
+    margin-bottom: 0;
     padding: 0;
   }
 
