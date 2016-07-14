@@ -4,10 +4,14 @@
   margin-top: 40px;
   padding: 25px;
 
+  //@media(min-width: $screen-md) {
+  //  padding: 25px;
+  //}
+
   color: $black;
   -webkit-border-radius: $border-radius;
-     -moz-border-radius: $border-radius;
-          border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  border-radius: $border-radius;
   background-image: url("/img/bg-about.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -35,9 +39,14 @@
     @include col(md, 2);
 
     position: relative;
-    @media(min-width: $screen-xs) {
+
+    padding-top: 35px;
+    padding-right: 0;
+    padding-left: 45px;
+
+    @media(min-width: $screen-md) {
       padding-top: 35px;
-      //padding-right: 15px;
+      //padding-right: 20px;
       padding-left: 55px;
     }
   }

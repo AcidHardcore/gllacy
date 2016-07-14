@@ -3,7 +3,7 @@
 
 .page-footer {
   @include row();
-
+  @include hidden-down(sm);
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -55,9 +55,11 @@
 
     @media (min-width: $screen-md) {
       display: flex;
-      align-items: center;
-      justify-content:space-around;
+
       margin-top: 20px;
+
+      align-items: center;
+      justify-content: space-around;
     }
 
     @media (min-width: $screen-lg) {
@@ -123,12 +125,12 @@
   }
 
   &__copyright {
-    width: 210px;
     display: inline;
+
+    width: 210px;
 
     @media (min-width: $screen-lg) {
       display: block;
     }
-
   }
 }

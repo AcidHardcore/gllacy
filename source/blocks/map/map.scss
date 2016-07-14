@@ -3,8 +3,8 @@
 
   min-height: 430px;
   margin-top: 40px;
-  //margin-right: -31px;
-  //margin-left: -32px;
+  margin-left: -20px;
+  margin-right: -20px;
 
   background-image: url("/img/bg-map.jpg");
   background-repeat: no-repeat;
@@ -31,9 +31,17 @@
   &__address {
     position: absolute;
     z-index: 3;
-    top: 0;
-    right: 12px;
-    bottom: 0;
+    bottom: -343px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    @media(min-width: $screen-md) {
+      top: 0;
+      bottom: 0;
+      left: auto;
+      right: 25px;
+    }
 
     display: flex;
     flex-direction: column;
