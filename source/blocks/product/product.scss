@@ -78,7 +78,12 @@
 
     text-align: center;
 
+    font-size: 1.6rem;
     font-weight: 500;
+
+    @media (min-width: $screen-md) {
+      font-size: 1.8rem;
+    }
 
     @media (min-width: $screen-xl) {
       margin-top: 297px;

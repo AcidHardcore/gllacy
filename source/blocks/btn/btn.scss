@@ -33,8 +33,7 @@
     width: 32px;
     height: 32px;
     padding: 0;
-
-    transition: all $transition-time;
+    //transition: all $transition-time;
 
     border: 0;
     border-radius: 50%;
@@ -112,8 +111,7 @@
     width: 92px;
     height: 32px;
     padding: 0;
-
-    transition: all $transition-time;
+    //transition: all $transition-time;
 
     background-color: rgba(255, 255, 255, .3);
     background-image: none;
@@ -135,8 +133,7 @@
     width: 117px;
     height: 32px;
     padding: 0;
-
-    transition: all $transition-time;
+    //transition: all $transition-time;
 
     background-color: rgba(255, 255, 255, .3);
     background-image: none;
@@ -162,7 +159,7 @@
 
   &--cart-form {
     float: right;
-
+    margin-top: 15px;
     padding: 10px 25px;
 
     font-size: 15px;
@@ -189,8 +186,7 @@
     margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
-
-    transition: all $transition-time;
+    //transition: all $transition-time;
 
     opacity: 0;
   }

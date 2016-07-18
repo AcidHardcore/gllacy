@@ -27,18 +27,18 @@
     width: 260px;
     min-height: 70px;
     padding: 15px 15px;
-
     //transition: opacity $transition-time ease;
-
     //opacity: 0;
+
     border-radius: 5px;
     background: #f8f7f4;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
 
     @media (min-width: $screen-md) {
-      width: 340px;
-      left: auto;
       right: 0;
+      left: auto;
+
+      width: 340px;
     }
   }
 

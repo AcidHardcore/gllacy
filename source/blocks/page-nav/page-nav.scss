@@ -5,8 +5,8 @@
   @include col(xs, 12, 12, 0);
   @include col(md, 9, 12, 0);
   @include col(lg, 6, 12, 0);
-
   //@media (min-width: $screen-xs) {
+
   display: flex;
 
   font-size: 16px;
@@ -21,20 +21,25 @@
 
   &__list {
     display: flex;
-
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    list-style: none;
     flex-direction: column;
-    flex-wrap: wrap;
+
+    width: 100%;
+    margin: 0;
     margin-bottom: 15px;
+    padding: 0;
+
+    list-style: none;
+
     text-align: center;
-    transition: all $transition-time;
+
+    flex-wrap: wrap;
+    //transition: all $transition-time;
 
     @media (min-width: $screen-md) {
       flex-direction: row;
+
       margin-bottom: 0;
+
       flex-wrap: wrap;
       justify-content: space-around;
     }
@@ -45,7 +50,6 @@
   }
 
   &__item:last-child {
-
     @media (min-width: $screen-md) {
       margin-right: auto;
     }
@@ -97,8 +101,8 @@
   &__link:hover {
     color: $black;
     -webkit-border-radius: $border-radius;
-    -moz-border-radius: $border-radius;
-    border-radius: $border-radius;
+       -moz-border-radius: $border-radius;
+            border-radius: $border-radius;
     background-color: $white;
 
     font-weight: 700;
@@ -115,8 +119,8 @@
 
     color: $white;
     -webkit-border-radius: $border-radius;
-    -moz-border-radius: $border-radius;
-    border-radius: $border-radius;
+       -moz-border-radius: $border-radius;
+            border-radius: $border-radius;
     background-color: #d07058;
 
     font-weight: 700;
@@ -127,8 +131,8 @@
 
     color: $black;
     -webkit-border-radius: $border-radius;
-    -moz-border-radius: $border-radius;
-    border-radius: $border-radius;
+       -moz-border-radius: $border-radius;
+            border-radius: $border-radius;
     background-color: $white;
     box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 1);
 
@@ -137,7 +141,7 @@
 
   &__list-lvl2 {
     position: absolute;
-    z-index: 5;
+    z-index: 6;
     top: 43px;
     left: -5px;
 
@@ -149,12 +153,13 @@
 
     list-style: none;
 
-    transition: opacity $transition-time ease;
+    text-align: left;
+    //transition: opacity $transition-time ease;
 
     opacity: 0;
     -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
     background-color: $white;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
   }
@@ -254,15 +259,14 @@
     position: absolute;
     top: 15.5px;
     right: 10px;
+
     display: flex;
     flex-direction: column;
-    padding: 5px 0;
-    justify-content: space-around;
-    align-items: center;
+
     width: 32px;
     height: 32px;
-
-    transition: all $transition-time;
+    padding: 5px 0;
+    //transition: all $transition-time;
 
     border: 0;
     border-radius: 50%;
@@ -271,6 +275,9 @@
     box-shadow: none;
 
     font-weight: 500;
+
+    align-items: center;
+    justify-content: space-around;
   }
 
   &__collapse:focus {
@@ -281,32 +288,35 @@
     display: block;
 
     width: 15px;
-    border-radius: 5px;
     height: 4px;
-
-    background-color: #fff;
     margin-top: auto;
     margin-bottom: auto;
+
+    border-radius: 5px;
+    background-color: #ffffff;
   }
 
   &__list--close-js {
-    opacity: 0;
-    z-index: -5;
-    height: 0;
+    //opacity: 0;
+    //z-index: -5;
+    //height: 0;
+    display: none;
 
     @media (min-width: $screen-md) {
-      z-index: 1;
-      opacity: 1;
-      height: auto;
+      //z-index: 1;
+      //opacity: 1;
+      //height: auto;
+      display: flex;
     }
   }
 
   &--close-js {
+    width: 0;
     height: 0;
 
     @media (min-width: $screen-md) {
+      width: auto;
       height: auto;
     }
   }
-
 }

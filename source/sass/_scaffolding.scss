@@ -61,8 +61,6 @@ body {
   min-height: 100%;
   margin: 0;
 
-  transition: all $transition-time;
-
   color: $text-color;
   background-color: $body-bg;
   background-image: radial-gradient(40% 40% at 50% 15% , rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .5) 25%, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, .3) 75%, rgba(255, 255, 255, .2) 100%);

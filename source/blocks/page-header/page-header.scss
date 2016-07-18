@@ -7,8 +7,10 @@
   @include row();
 
   position: relative;
+
   margin-top: 15px;
   margin-bottom: 45px;
+
   align-items: center;
 
   @media (min-width: $screen-md) {
