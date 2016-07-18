@@ -1,7 +1,7 @@
 .entrance {
   &__wrapper {
     position: relative;
-    z-index: 3;
+    z-index: 5;
 
     margin-right: 10px;
   }
@@ -9,14 +9,14 @@
   &__wrapper:hover &__form {
     display: block;
 
-    opacity: 1;
+    //opacity: 1;
   }
 
   &__form {
     position: absolute;
     top: 32px;
     right: 0;
-
+    left: -49px;
     display: none;
     clear: both;
 
@@ -24,12 +24,17 @@
     min-height: 175px;
     padding: 15px 15px;
 
-    transition: opacity $transition-time ease;
+    //transition: opacity $transition-time ease;
 
-    opacity: 0;
+    //opacity: 0;
     border-radius: 5px;
     background: #f8f7f4;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
+
+    @media (min-width: $screen-md) {
+      right: 0;
+      left: auto;
+    }
   }
 
   &__input {

@@ -12,27 +12,27 @@
   // @if ($screen = xs) { // XS по умолчанию 0, так что это бессмысленно
   //   @media (min-width: $screen-xs) { display: none; }
   // }
-  @if ($screen = sm) {
+  @if ($screen == sm) {
     @media (min-width: $screen-sm) {
       display: none;
     }
   }
-  @if ($screen = md) {
+  @if ($screen == md) {
     @media (min-width: $screen-md) {
       display: none;
     }
   }
-  @if ($screen = lg) {
+  @if ($screen == lg) {
     @media (min-width: $screen-lg) {
       display: none;
     }
   }
-  @if ($screen = xl) {
+  @if ($screen == xl) {
     @media (min-width: $screen-xl) {
       display: none;
     }
   }
-  @if ($screen = xxl) {
+  @if ($screen == xxl) {
     @media (min-width: $screen-xxl) {
       display: none;
     }

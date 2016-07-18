@@ -8,8 +8,10 @@
 <header class="page-header">
   @@include('../../blocks/logo/logo.html')
   @@include('../../blocks/page-nav/page-nav.html')
-  @@include('../../blocks/search/search.html')
-  @@include('../../blocks/entrance/entrance.html')
-  @@include('../../blocks/cart/cart.html')
+  <div class="page-header__wrapper">
+    @@include('../../blocks/search/search.html')
+    @@include('../../blocks/entrance/entrance.html')
+    @@include('../../blocks/cart/cart.html')
+  </div>
   @@include('../../blocks/time-tel/time-tel.html')
 </header>

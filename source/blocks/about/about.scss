@@ -3,15 +3,14 @@
 
   margin-top: 40px;
   padding: 25px;
-
   //@media(min-width: $screen-md) {
   //  padding: 25px;
   //}
 
   color: $black;
   -webkit-border-radius: $border-radius;
-  -moz-border-radius: $border-radius;
-  border-radius: $border-radius;
+     -moz-border-radius: $border-radius;
+          border-radius: $border-radius;
   background-image: url("/img/bg-about.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;

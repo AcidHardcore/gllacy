@@ -1,7 +1,8 @@
 .banner {
   @include row();
-
-  margin-top: -20px;
+  @media (min-width: $screen-md) {
+    margin-top: -20px;
+  }
 
   &__left {
     @include col(xs, 4);
@@ -42,6 +43,7 @@
     z-index: 3;
 
     min-height: 23.2rem;
+    margin-top: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -49,13 +51,9 @@
     background-image: url("/img/bg-chocolate.png");
     background-repeat: no-repeat;
     background-size: cover;
-
-    margin-top: 40px;
     @media (min-width: $screen-xs) {
       display: flex;
       flex-direction: column;
-
-
 
       justify-content: space-between;
     }

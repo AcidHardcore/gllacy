@@ -2,27 +2,39 @@
 @import "../../sass/variables";
 
 .page-nav {
-  margin-right: auto;
-  margin-left: 15px;
+  @include col(xs, 12, 12, 0);
+  @include col(md, 9, 12, 0);
+  @include col(lg, 6, 12, 0);
+
+  //@media (min-width: $screen-xs) {
+  display: flex;
 
   font-size: 16px;
 
+  justify-content: flex-start;
+  //width: 100%;
+  //}
+
+  @media (min-width: $screen-lg) {
+    width: auto;
+  }
+
   &__list {
     display: flex;
-    //flex-direction: column;
-    flex-wrap: wrap;
 
     margin: 0;
     padding: 0;
-
+    width: 100%;
     list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: all $transition-time;
 
-    @media (max-width: 767px) {
-    }
-
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-md) {
       flex-direction: row;
-
+      margin-bottom: 0;
       flex-wrap: wrap;
       justify-content: space-around;
     }
@@ -30,6 +42,17 @@
 
   &__item {
     cursor: pointer;
+  }
+
+  &__item:last-child {
+
+    @media (min-width: $screen-md) {
+      margin-right: auto;
+    }
+
+    //@media (min-width: $screen-lg) {
+    //  margin-right: 0;
+    //}
   }
 
   &__link {
@@ -51,7 +74,7 @@
 
     content: "";
 
-    background-color: rgba(255,255,255, .3);
+    background-color: rgba(255, 255, 255, .3);
   }
 
   &__link:hover,
@@ -74,8 +97,8 @@
   &__link:hover {
     color: $black;
     -webkit-border-radius: $border-radius;
-       -moz-border-radius: $border-radius;
-            border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    border-radius: $border-radius;
     background-color: $white;
 
     font-weight: 700;
@@ -92,8 +115,8 @@
 
     color: $white;
     -webkit-border-radius: $border-radius;
-       -moz-border-radius: $border-radius;
-            border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    border-radius: $border-radius;
     background-color: #d07058;
 
     font-weight: 700;
@@ -104,8 +127,8 @@
 
     color: $black;
     -webkit-border-radius: $border-radius;
-       -moz-border-radius: $border-radius;
-            border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    border-radius: $border-radius;
     background-color: $white;
     box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 1);
 
@@ -114,7 +137,7 @@
 
   &__list-lvl2 {
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     top: 43px;
     left: -5px;
 
@@ -130,8 +153,8 @@
 
     opacity: 0;
     -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     background-color: $white;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
   }
@@ -181,11 +204,11 @@
   }
 
   &__link-lvl2--bold {
-    font-weight: 700 ;
+    font-weight: 700;
   }
 
   &__item-lvl2 {
-    min-height: 36px;
+    min-height: 32px;
   }
 
   &__item-lvl2:first-child::after {
@@ -229,20 +252,25 @@
     @include hidden-up(md);
 
     position: absolute;
-    top: 5px;
-    right: 5px;
-
+    top: 15.5px;
+    right: 10px;
     display: flex;
     flex-direction: column;
+    padding: 5px 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 32px;
+    height: 32px;
 
-    width: 23px;
-    height: 23px;
-    padding: 0;
+    transition: all $transition-time;
 
     border: 0;
-    background-color: transparent;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .3);
+    background-image: none;
+    box-shadow: none;
 
-    justify-content: space-around;
+    font-weight: 500;
   }
 
   &__collapse:focus {
@@ -252,16 +280,33 @@
   &__row {
     display: block;
 
-    width: 23px;
+    width: 15px;
+    border-radius: 5px;
     height: 4px;
 
-    background-color: $black;
+    background-color: #fff;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   &__list--close-js {
-    display: none;
+    opacity: 0;
+    z-index: -5;
+    height: 0;
+
     @media (min-width: $screen-md) {
-      display: flex;
+      z-index: 1;
+      opacity: 1;
+      height: auto;
     }
   }
+
+  &--close-js {
+    height: 0;
+
+    @media (min-width: $screen-md) {
+      height: auto;
+    }
+  }
+
 }

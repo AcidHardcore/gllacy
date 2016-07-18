@@ -4,6 +4,7 @@
 .page-footer {
   @include row();
   @include hidden-down(sm);
+
   padding-top: 20px;
   padding-bottom: 20px;
 

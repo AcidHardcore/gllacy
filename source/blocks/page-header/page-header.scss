@@ -4,12 +4,27 @@
 @import "../../sass/mixins/mixins";
 
 .page-header {
+  @include row();
+
   position: relative;
-
-  display: flex;
-
-  margin-right: $grid-gutter-width/ -2;
-  margin-left: $grid-gutter-width/ -2;
-
+  margin-top: 15px;
+  margin-bottom: 45px;
   align-items: center;
+
+  @media (min-width: $screen-md) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__wrapper {
+    @include col(xs, 12, 12, 0);
+    @include col(md, 12, 12, 0);
+    @include col(lg, 4, 12, 0);
+
+    @media (min-width: $screen-xs) {
+      display: flex;
+
+      justify-content: flex-end;
+    }
+  }
 }
