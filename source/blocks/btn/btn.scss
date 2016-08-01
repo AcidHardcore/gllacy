@@ -159,6 +159,7 @@
 
   &--cart-form {
     float: right;
+
     margin-top: 15px;
     padding: 10px 25px;
 
@@ -180,15 +181,15 @@
   }
 
   &--product {
-    display: none;
+    display: flex;
+    visibility: hidden;
 
     width: 100%;
     margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
-    //transition: all $transition-time;
 
-    opacity: 0;
+    //transition: .2s;
   }
 
   &--newsletter {

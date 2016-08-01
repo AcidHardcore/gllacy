@@ -41,7 +41,6 @@
   &__table {
     //display: flex;
     //flex-direction: column;
-
     width: 100%;
 
     color: $black;
@@ -51,9 +50,10 @@
 
   &__row {
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__row:not(:first-child) {
@@ -64,7 +64,6 @@
     flex: 1 1 5%;
 
     @media (min-width: $screen-md) {
-
     }
   }
 
@@ -80,7 +79,6 @@
     flex: 1 1 45%;
 
     @media (min-width: $screen-md) {
-
     }
   }
 
@@ -93,35 +91,41 @@
   }
 
   &__table-item-5 {
-    flex: 1 1 100%;
-    text-align: right;
     margin-top: 15px;
 
+    text-align: right;
+
+    flex: 1 1 100%;
+
     @media (min-width: $screen-md) {
-      flex: 1 1 15%;
       margin: 0;
+
       text-align: center;
+
+      flex: 1 1 15%;
     }
   }
 
   &__row {
     display: flex;
+
     flex: 1 1 100%;
     flex-wrap: wrap;
-
   }
 
   &__row--border {
     border-top: 1px solid $black;
-
   }
 
   &__table-item-total {
-    flex: 1 1 25%;
-    text-align: right;
     margin-top: 15px;
+
+    text-align: right;
+
     font-size: 15px;
     font-weight: 700;
+
+    flex: 1 1 25%;
   }
 
   &__item-price {
